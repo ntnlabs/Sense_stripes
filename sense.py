@@ -70,11 +70,10 @@ while True:
     line3 = line0[0:8-len(line3)]+line3
     
   # just to see if it's doing what it is supposed to do
-  # Create the message
-  # str() converts the value to a string so it can be concatenated
-  message = "Temperature: " + str(t) + " Pressure: " + str(p) + " Humidity: " + str(h)
+  # message = "Temperature: " + str(t) + " Pressure: " + str(p) + " Humidity: " + str(h)
 
   print(message)
   image = [line1+line1+line0+line2+line2+line0+line3+line3]
   sense.set_pixels(image[0])
-  sleep(1)
+  # for my aplication a measurement once a minute is enough
+  sleep(60)
