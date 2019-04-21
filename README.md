@@ -17,6 +17,7 @@ Syslog was added as a small modification of this code: https://community.microfo
 I am using free version of Splunk and this is the code I am using to show the graphs:
 
 For just one value: host="host.host.host" "temperature/humidity/pressure" | timechart values(temperature) span=1m
+
 For all three values in one graph: host="host.host.host" "temperature/humidity/pressure" | timechart values(temperature) as temperature values(humidity) as humidity values(pressure) as pressure span=1m
 
 I used the "extract new fields" function to extract the fields and have them named like this.
