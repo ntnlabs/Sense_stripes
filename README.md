@@ -11,3 +11,5 @@ Pressure is 970 hPa (first LED is 960 + 1 other LED with 10 points means 960 + (
 Humidity is above 90 procent (all LEDs are glowing that means the humidity is outside set boundaries).
 
 The idea was inserted to a file from https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat/8 where is a nice tutorial on reading all three values at once. All I did was the bars ;)
+
+There are two more branches for special use cases I needed to have. Feel free to explore them too ;)
